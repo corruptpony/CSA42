@@ -6,5 +6,11 @@ c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\service\bin\De
 c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\service\bin\Debug\contract.pdb
 c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\service\obj\Debug\service.exe
 c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\service\obj\Debug\service.pdb
+C:\Users\Tim\Documents\GitHub\CSA42\MySecondWCFApp\service\bin\Debug\service.exe.config
 C:\Users\Tim\Documents\GitHub\CSA42\MySecondWCFApp\service\bin\Debug\service.exe
+C:\Users\Tim\Documents\GitHub\CSA42\MySecondWCFApp\service\bin\Debug\service.pdb
 C:\Users\Tim\Documents\GitHub\CSA42\MySecondWCFApp\service\bin\Debug\contract.dll
+C:\Users\Tim\Documents\GitHub\CSA42\MySecondWCFApp\service\bin\Debug\contract.pdb
+C:\Users\Tim\Documents\GitHub\CSA42\MySecondWCFApp\service\obj\Debug\service.csprojResolveAssemblyReference.cache
+C:\Users\Tim\Documents\GitHub\CSA42\MySecondWCFApp\service\obj\Debug\service.exe
+C:\Users\Tim\Documents\GitHub\CSA42\MySecondWCFApp\service\obj\Debug\service.pdb
