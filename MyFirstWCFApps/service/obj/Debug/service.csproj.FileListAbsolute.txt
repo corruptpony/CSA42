@@ -1,0 +1,8 @@
+c:\users\tim\documents\visual studio 2013\Projects\MyFirstWCFApps\service\bin\Debug\service.exe.config
+c:\users\tim\documents\visual studio 2013\Projects\MyFirstWCFApps\service\bin\Debug\service.exe
+c:\users\tim\documents\visual studio 2013\Projects\MyFirstWCFApps\service\bin\Debug\service.pdb
+c:\users\tim\documents\visual studio 2013\Projects\MyFirstWCFApps\service\bin\Debug\ICalculator.dll
+c:\users\tim\documents\visual studio 2013\Projects\MyFirstWCFApps\service\bin\Debug\ICalculator.pdb
+c:\users\tim\documents\visual studio 2013\Projects\MyFirstWCFApps\service\obj\Debug\service.csprojResolveAssemblyReference.cache
+c:\users\tim\documents\visual studio 2013\Projects\MyFirstWCFApps\service\obj\Debug\service.exe
+c:\users\tim\documents\visual studio 2013\Projects\MyFirstWCFApps\service\obj\Debug\service.pdb

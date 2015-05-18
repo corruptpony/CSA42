@@ -1,0 +1,11 @@
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\client\obj\Debug\client.csprojResolveAssemblyReference.cache
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\client\obj\Debug\MyCalculatorService.calculatorClient.resources
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\client\obj\Debug\MyCalculatorService.Properties.Resources.resources
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\client\obj\Debug\client.csproj.GenerateResource.Cache
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\client\bin\Debug\client.exe.config
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\client\bin\Debug\client.exe
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\client\bin\Debug\client.pdb
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\client\bin\Debug\contract.dll
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\client\bin\Debug\contract.pdb
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\client\obj\Debug\client.exe
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\client\obj\Debug\client.pdb

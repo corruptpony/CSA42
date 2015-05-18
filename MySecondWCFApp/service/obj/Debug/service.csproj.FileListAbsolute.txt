@@ -1,0 +1,8 @@
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\service\obj\Debug\service.csprojResolveAssemblyReference.cache
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\service\bin\Debug\service.exe.config
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\service\bin\Debug\service.exe
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\service\bin\Debug\service.pdb
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\service\bin\Debug\contract.dll
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\service\bin\Debug\contract.pdb
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\service\obj\Debug\service.exe
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\service\obj\Debug\service.pdb

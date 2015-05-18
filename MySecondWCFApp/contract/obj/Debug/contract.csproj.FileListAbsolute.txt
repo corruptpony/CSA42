@@ -1,0 +1,5 @@
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\contract\bin\Debug\contract.dll
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\contract\bin\Debug\contract.pdb
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\contract\obj\Debug\contract.dll
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\contract\obj\Debug\contract.pdb
+c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\contract\obj\Debug\contract.csprojResolveAssemblyReference.cache

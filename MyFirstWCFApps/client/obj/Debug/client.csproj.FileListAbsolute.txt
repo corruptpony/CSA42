@@ -1,0 +1,11 @@
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\MyFirstWCFApps\client\bin\Debug\client.exe.config
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\MyFirstWCFApps\client\bin\Debug\client.exe
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\MyFirstWCFApps\client\bin\Debug\client.pdb
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\MyFirstWCFApps\client\bin\Debug\ICalculator.dll
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\MyFirstWCFApps\client\bin\Debug\ICalculator.pdb
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\MyFirstWCFApps\client\obj\Debug\client.csprojResolveAssemblyReference.cache
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\MyFirstWCFApps\client\obj\Debug\client.Form1.resources
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\MyFirstWCFApps\client\obj\Debug\client.Properties.Resources.resources
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\MyFirstWCFApps\client\obj\Debug\client.csproj.GenerateResource.Cache
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\MyFirstWCFApps\client\obj\Debug\client.exe
+C:\Users\Tim\Documents\Visual Studio 2013\Projects\MyFirstWCFApps\client\obj\Debug\client.pdb

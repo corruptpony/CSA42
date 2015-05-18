@@ -1,0 +1,5 @@
+c:\users\tim\documents\visual studio 2013\Projects\MyFirstWCFApps\ICalculator\bin\Debug\ICalculator.dll
+c:\users\tim\documents\visual studio 2013\Projects\MyFirstWCFApps\ICalculator\bin\Debug\ICalculator.pdb
+c:\users\tim\documents\visual studio 2013\Projects\MyFirstWCFApps\ICalculator\obj\Debug\contract.csprojResolveAssemblyReference.cache
+c:\users\tim\documents\visual studio 2013\Projects\MyFirstWCFApps\ICalculator\obj\Debug\ICalculator.dll
+c:\users\tim\documents\visual studio 2013\Projects\MyFirstWCFApps\ICalculator\obj\Debug\ICalculator.pdb

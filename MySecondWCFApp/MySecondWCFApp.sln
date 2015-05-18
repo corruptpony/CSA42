@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "contract", "contract\contract.csproj", "{66E9995D-7687-495A-97E6-5081C9870470}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "service", "service\service.csproj", "{D1307E00-E2BD-405D-8441-3CCC6DA9DEF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "client", "client\client.csproj", "{96A77C1F-2392-4269-8281-5726E74250C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66E9995D-7687-495A-97E6-5081C9870470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E9995D-7687-495A-97E6-5081C9870470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E9995D-7687-495A-97E6-5081C9870470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E9995D-7687-495A-97E6-5081C9870470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1307E00-E2BD-405D-8441-3CCC6DA9DEF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1307E00-E2BD-405D-8441-3CCC6DA9DEF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1307E00-E2BD-405D-8441-3CCC6DA9DEF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1307E00-E2BD-405D-8441-3CCC6DA9DEF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96A77C1F-2392-4269-8281-5726E74250C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96A77C1F-2392-4269-8281-5726E74250C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96A77C1F-2392-4269-8281-5726E74250C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96A77C1F-2392-4269-8281-5726E74250C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
