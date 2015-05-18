@@ -5,6 +5,5 @@ c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\contract\obj\D
 c:\users\tim\documents\visual studio 2013\Projects\MySecondWCFApp\contract\obj\Debug\contract.csprojResolveAssemblyReference.cache
 C:\Users\Tim\Documents\GitHub\CSA42\MySecondWCFApp\contract\bin\Debug\contract.dll
 C:\Users\Tim\Documents\GitHub\CSA42\MySecondWCFApp\contract\bin\Debug\contract.pdb
-C:\Users\Tim\Documents\GitHub\CSA42\MySecondWCFApp\contract\obj\Debug\contract.csprojResolveAssemblyReference.cache
 C:\Users\Tim\Documents\GitHub\CSA42\MySecondWCFApp\contract\obj\Debug\contract.dll
 C:\Users\Tim\Documents\GitHub\CSA42\MySecondWCFApp\contract\obj\Debug\contract.pdb
