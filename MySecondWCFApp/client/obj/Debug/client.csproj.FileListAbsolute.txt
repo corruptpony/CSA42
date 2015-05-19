@@ -20,3 +20,14 @@ C:\Users\Tim\Documents\GitHub\CSA42\MySecondWCFApp\client\obj\Debug\MyCalculator
 C:\Users\Tim\Documents\GitHub\CSA42\MySecondWCFApp\client\obj\Debug\client.csproj.GenerateResource.Cache
 C:\Users\Tim\Documents\GitHub\CSA42\MySecondWCFApp\client\obj\Debug\client.exe
 C:\Users\Tim\Documents\GitHub\CSA42\MySecondWCFApp\client\obj\Debug\client.pdb
+C:\Users\Lars\Documents\GitHub\CSA42\MySecondWCFApp\client\bin\Debug\client.exe.config
+C:\Users\Lars\Documents\GitHub\CSA42\MySecondWCFApp\client\bin\Debug\client.exe
+C:\Users\Lars\Documents\GitHub\CSA42\MySecondWCFApp\client\bin\Debug\client.pdb
+C:\Users\Lars\Documents\GitHub\CSA42\MySecondWCFApp\client\bin\Debug\contract.dll
+C:\Users\Lars\Documents\GitHub\CSA42\MySecondWCFApp\client\bin\Debug\contract.pdb
+C:\Users\Lars\Documents\GitHub\CSA42\MySecondWCFApp\client\obj\Debug\client.csprojResolveAssemblyReference.cache
+C:\Users\Lars\Documents\GitHub\CSA42\MySecondWCFApp\client\obj\Debug\MyCalculatorService.calculatorClient.resources
+C:\Users\Lars\Documents\GitHub\CSA42\MySecondWCFApp\client\obj\Debug\MyCalculatorService.Properties.Resources.resources
+C:\Users\Lars\Documents\GitHub\CSA42\MySecondWCFApp\client\obj\Debug\client.csproj.GenerateResource.Cache
+C:\Users\Lars\Documents\GitHub\CSA42\MySecondWCFApp\client\obj\Debug\client.exe
+C:\Users\Lars\Documents\GitHub\CSA42\MySecondWCFApp\client\obj\Debug\client.pdb
