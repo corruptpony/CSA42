@@ -1,0 +1,8 @@
+C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\webshopclient\obj\Debug\webshopclient.WebshopClient.resources
+C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\webshopclient\obj\Debug\webshopclient.Properties.Resources.resources
+C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\webshopclient\obj\Debug\webshopclient.csproj.GenerateResource.Cache
+C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\webshopclient\bin\Debug\webshopclient.exe.config
+C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\webshopclient\bin\Debug\webshopclient.exe
+C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\webshopclient\bin\Debug\webshopclient.pdb
+C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\webshopclient\obj\Debug\webshopclient.exe
+C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\webshopclient\obj\Debug\webshopclient.pdb
