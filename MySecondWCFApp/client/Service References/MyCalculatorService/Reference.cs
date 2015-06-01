@@ -38,6 +38,12 @@ namespace MyCalculatorService.MyCalculatorService {
         
         [System.ServiceModel.OperationContractAttribute(Action="MyCalculatorContract/ICalculator/Divide", ReplyAction="MyCalculatorContract/ICalculator/DivideResponse")]
         System.Threading.Tasks.Task<double> DivideAsync(double n1, double n2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="MyCalculatorContract/ICalculator/getNrOfCalculations", ReplyAction="MyCalculatorContract/ICalculator/getNrOfCalculationsResponse")]
+        int getNrOfCalculations();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="MyCalculatorContract/ICalculator/getNrOfCalculations", ReplyAction="MyCalculatorContract/ICalculator/getNrOfCalculationsResponse")]
+        System.Threading.Tasks.Task<int> getNrOfCalculationsAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -97,6 +103,14 @@ namespace MyCalculatorService.MyCalculatorService {
         
         public System.Threading.Tasks.Task<double> DivideAsync(double n1, double n2) {
             return base.Channel.DivideAsync(n1, n2);
+        }
+        
+        public int getNrOfCalculations() {
+            return base.Channel.getNrOfCalculations();
+        }
+        
+        public System.Threading.Tasks.Task<int> getNrOfCalculationsAsync() {
+            return base.Channel.getNrOfCalculationsAsync();
         }
     }
 }

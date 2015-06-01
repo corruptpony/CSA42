@@ -60,4 +60,16 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="getNrOfCalculations">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getNrOfCalculationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getNrOfCalculationsResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

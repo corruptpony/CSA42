@@ -22,5 +22,8 @@ namespace MyCalculatorContract
 
         [OperationContract]
         double Divide(double n1, double n2);
+
+        [OperationContract]
+        int getNrOfCalculations();
     }
 }

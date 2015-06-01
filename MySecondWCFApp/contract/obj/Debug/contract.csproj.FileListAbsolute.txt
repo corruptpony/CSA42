@@ -12,3 +12,4 @@ C:\Users\Lars\Documents\GitHub\CSA42\MySecondWCFApp\contract\bin\Debug\contract.
 C:\Users\Lars\Documents\GitHub\CSA42\MySecondWCFApp\contract\obj\Debug\contract.csprojResolveAssemblyReference.cache
 C:\Users\Lars\Documents\GitHub\CSA42\MySecondWCFApp\contract\obj\Debug\contract.dll
 C:\Users\Lars\Documents\GitHub\CSA42\MySecondWCFApp\contract\obj\Debug\contract.pdb
+C:\Users\Tim\Documents\GitHub\CSA42\MySecondWCFApp\contract\obj\Debug\contract.csprojResolveAssemblyReference.cache

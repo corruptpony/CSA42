@@ -36,6 +36,8 @@
             this.tbN1 = new System.Windows.Forms.TextBox();
             this.tbResult = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnCalc = new System.Windows.Forms.Button();
+            this.tbCalc = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnAdd
@@ -95,7 +97,7 @@
             // tbResult
             // 
             this.tbResult.Enabled = false;
-            this.tbResult.Location = new System.Drawing.Point(12, 160);
+            this.tbResult.Location = new System.Drawing.Point(12, 139);
             this.tbResult.Name = "tbResult";
             this.tbResult.Size = new System.Drawing.Size(156, 20);
             this.tbResult.TabIndex = 6;
@@ -103,17 +105,37 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(74, 133);
+            this.label1.Location = new System.Drawing.Point(74, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(13, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "=";
             // 
+            // btnCalc
+            // 
+            this.btnCalc.Location = new System.Drawing.Point(12, 165);
+            this.btnCalc.Name = "btnCalc";
+            this.btnCalc.Size = new System.Drawing.Size(156, 23);
+            this.btnCalc.TabIndex = 8;
+            this.btnCalc.Text = "Nr of Calculations";
+            this.btnCalc.UseVisualStyleBackColor = true;
+            this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
+            // 
+            // tbCalc
+            // 
+            this.tbCalc.Enabled = false;
+            this.tbCalc.Location = new System.Drawing.Point(12, 194);
+            this.tbCalc.Name = "tbCalc";
+            this.tbCalc.Size = new System.Drawing.Size(156, 20);
+            this.tbCalc.TabIndex = 9;
+            // 
             // calculatorClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(185, 203);
+            this.ClientSize = new System.Drawing.Size(185, 225);
+            this.Controls.Add(this.tbCalc);
+            this.Controls.Add(this.btnCalc);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbResult);
             this.Controls.Add(this.tbN1);
@@ -139,6 +161,8 @@
         private System.Windows.Forms.TextBox tbN1;
         private System.Windows.Forms.TextBox tbResult;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCalc;
+        private System.Windows.Forms.TextBox tbCalc;
     }
 }
 

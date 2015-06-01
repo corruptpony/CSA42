@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="7v4hwyxsar2d8JCwWovn7kKom3s=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="Xc7qq9+lkVkxRtTO5/2VqEqBaDI=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="wsHttpBinding" name="WSHttpBinding_ICalculator">
       <properties>
@@ -127,10 +127,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="WSHttpBinding_ICalculator" contract="MyCalculatorService.ICalculator" bindingType="wsHttpBinding" address="http://localhost:8000/calculatorservice" bindingConfiguration="WSHttpBinding_ICalculator">
+    <endpoint name="WSHttpBinding_ICalculator" contract="MyCalculatorService.ICalculator" bindingType="wsHttpBinding" address="http://145.93.248.167/calculatorservice" bindingConfiguration="WSHttpBinding_ICalculator">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:8000/calculatorservice</serializedValue>
+          <serializedValue>http://145.93.248.167/calculatorservice</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

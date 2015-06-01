@@ -4,17 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ServiceModel;
-using MyCalculatorContract;
 
-namespace service
+namespace MyCalculatorContract
 {
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     class CCalculator : ICalculator
     {
+        int totalNumberOfCalculations = 0;
+
         public double Add(double n1, double n2)
         {
             double result = n1 + n2;
             Console.WriteLine("Received Add({0},{1})", n1, n2);
             Console.WriteLine("Return: {0}", result);
+            totalNumberOfCalculations++;
             return result;
         }
 
@@ -23,6 +26,7 @@ namespace service
             double result = n1 - n2;
             Console.WriteLine("Received Subtract({0},{1})", n1, n2);
             Console.WriteLine("Return: {0}", result);
+            totalNumberOfCalculations++;
             return result;
         }
 
@@ -31,6 +35,7 @@ namespace service
             double result = n1 * n2;
             Console.WriteLine("Received Multiply({0},{1})", n1, n2);
             Console.WriteLine("Return: {0}", result);
+            totalNumberOfCalculations++;
             return result;
         }
 
@@ -39,7 +44,13 @@ namespace service
             double result = n1 / n2;
             Console.WriteLine("Received Divide({0},{1})", n1, n2);
             Console.WriteLine("Return: {0}", result);
+            totalNumberOfCalculations++;
             return result;
+        }
+
+        public int getNrOfCalculations()
+        {
+            return totalNumberOfCalculations;
         }
     }
 }

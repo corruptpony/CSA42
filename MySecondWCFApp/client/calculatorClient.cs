@@ -42,5 +42,10 @@ namespace MyCalculatorService
         {
             tbResult.Text = proxy.Divide(Convert.ToDouble(tbN1.Text), Convert.ToDouble(tbN2.Text)).ToString();
         }
+
+        private void btnCalc_Click(object sender, EventArgs e)
+        {
+            tbCalc.Text = proxy.getNrOfCalculations().ToString();
+        }
     }
 }
