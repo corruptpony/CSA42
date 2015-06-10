@@ -7,17 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.ServiceModel;
 
 namespace webshopclient
 {
-    public partial class WebshopClient : Form
+    public partial class WebshopClient : Form, MyWebshopContract.IWebshopCallback
     {
         MyWebshopContract.WebshopClient proxy;
 
         public WebshopClient()
         {
             InitializeComponent();
-            proxy = new MyWebshopContract.WebshopClient();
+            MyWebshopContract.IWebshopCallback callback = this;
+            InstanceContext context = new InstanceContext(callback);
+            proxy = new MyWebshopContract.WebshopClient(context);
         }
 
         private void btnGetName_Click(object sender, EventArgs e)
@@ -49,11 +52,10 @@ namespace webshopclient
             if (lbId.SelectedItem != null)
             {
                 bool bought = proxy.BuyProduct(lbId.SelectedItem.ToString());
-                updateLists();
 
                 if(bought)
                 {
-                    MessageBox.Show("succes!");
+                    updateLists();
                 }
                 else
                 {
@@ -87,5 +89,18 @@ namespace webshopclient
                 MessageBox.Show("is null");
             }
         }
+
+        public void productShipped(string productId, DateTime shippingMoment)
+        {
+            lblName.Text = "your order of " + productId + " was shipped at " + shippingMoment.ToString() + ".";
+        }
     }
+
+    /*public class CWebshopCallback : MyWebshopContract.IWebshopCallback
+    {
+        public void productShipped(string productId, DateTime shippingMoment)
+        {
+            MessageBox.Show("your order of " + productId + " was shipped at " + shippingMoment.ToString() + ".");
+        }
+    }*/
 }

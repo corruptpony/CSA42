@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
 namespace MyWebshopContract
 {
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     public class CWebshop : IWebshop
     {
         private static Database db;
@@ -47,6 +47,9 @@ namespace MyWebshopContract
                     if(i.Stock > 0 && i.onSale)
                     {
                         i.Stock--;
+                        IWebshopCallback callback = OperationContext.Current.GetCallbackChannel<IWebshopCallback>();
+                        CBackoffice backend = new CBackoffice();
+                        backend.addOrder(ProductId, callback);
                         return true;
                     }
                 }

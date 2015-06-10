@@ -1,0 +1,8 @@
+C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\Backoffice\obj\Debug\Backoffice.Backoffice.resources
+C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\Backoffice\obj\Debug\Backoffice.Properties.Resources.resources
+C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\Backoffice\obj\Debug\Backoffice.csproj.GenerateResource.Cache
+C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\Backoffice\bin\Debug\Backoffice.exe.config
+C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\Backoffice\bin\Debug\Backoffice.exe
+C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\Backoffice\bin\Debug\Backoffice.pdb
+C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\Backoffice\obj\Debug\Backoffice.exe
+C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\Backoffice\obj\Debug\Backoffice.pdb

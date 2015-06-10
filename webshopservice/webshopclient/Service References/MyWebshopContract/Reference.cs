@@ -91,7 +91,7 @@ namespace webshopclient.MyWebshopContract {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="MyWebshopContract", ConfigurationName="MyWebshopContract.IWebshop")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="MyWebshopContract", ConfigurationName="MyWebshopContract.IWebshop", CallbackContract=typeof(webshopclient.MyWebshopContract.IWebshopCallback))]
     public interface IWebshop {
         
         [System.ServiceModel.OperationContractAttribute(Action="MyWebshopContract/IWebshop/GetWebshopName", ReplyAction="MyWebshopContract/IWebshop/GetWebshopNameResponse")]
@@ -120,30 +120,38 @@ namespace webshopclient.MyWebshopContract {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface IWebshopCallback {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="MyWebshopContract/IWebshop/productShipped", ReplyAction="MyWebshopContract/IWebshop/productShippedResponse")]
+        void productShipped(string productId, System.DateTime shippingMoment);
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface IWebshopChannel : webshopclient.MyWebshopContract.IWebshop, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class WebshopClient : System.ServiceModel.ClientBase<webshopclient.MyWebshopContract.IWebshop>, webshopclient.MyWebshopContract.IWebshop {
+    public partial class WebshopClient : System.ServiceModel.DuplexClientBase<webshopclient.MyWebshopContract.IWebshop>, webshopclient.MyWebshopContract.IWebshop {
         
-        public WebshopClient() {
+        public WebshopClient(System.ServiceModel.InstanceContext callbackInstance) : 
+                base(callbackInstance) {
         }
         
-        public WebshopClient(string endpointConfigurationName) : 
-                base(endpointConfigurationName) {
+        public WebshopClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName) : 
+                base(callbackInstance, endpointConfigurationName) {
         }
         
-        public WebshopClient(string endpointConfigurationName, string remoteAddress) : 
-                base(endpointConfigurationName, remoteAddress) {
+        public WebshopClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress) : 
+                base(callbackInstance, endpointConfigurationName, remoteAddress) {
         }
         
-        public WebshopClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(endpointConfigurationName, remoteAddress) {
+        public WebshopClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(callbackInstance, endpointConfigurationName, remoteAddress) {
         }
         
-        public WebshopClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(binding, remoteAddress) {
+        public WebshopClient(System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(callbackInstance, binding, remoteAddress) {
         }
         
         public string GetWebshopName() {

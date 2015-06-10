@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
+using System.Runtime.InteropServices;
 using System.ServiceModel;
 using System.Text;
 
 namespace MyWebshopContract
 {
-    [ServiceContract(Namespace = "MyWebshopContract")]
+    [ServiceContract(Namespace = "MyWebshopContract", CallbackContract = typeof(IWebshopCallback))]
     public interface IWebshop
     {
         [OperationContract]
@@ -21,6 +22,12 @@ namespace MyWebshopContract
 
         [OperationContract]
         bool BuyProduct(string ProductId);
+    }
+
+    public interface IWebshopCallback
+    {
+        [OperationContract]
+        void productShipped(string productId, DateTime shippingMoment);
     }
 
     [DataContract]
