@@ -11,9 +11,10 @@ using System.ServiceModel;
 
 namespace webshopclient
 {
-    public partial class WebshopClient : Form, MyWebshopContract.IWebshopCallback
+    public partial class WebshopClient : Form, MyWebshopContract.IWebshopCallback, MyWebshopContract.IEventContractCallback
     {
         MyWebshopContract.WebshopClient proxy;
+        MyWebshopContract.EventContractClient eventProxy;
 
         public WebshopClient()
         {
@@ -21,6 +22,13 @@ namespace webshopclient
             MyWebshopContract.IWebshopCallback callback = this;
             InstanceContext context = new InstanceContext(callback);
             proxy = new MyWebshopContract.WebshopClient(context);
+
+            MyWebshopContract.IEventContractCallback  eventCallback = this;
+            InstanceContext eventContext = new InstanceContext(eventCallback);
+            eventProxy = new MyWebshopContract.EventContractClient(eventContext);
+
+            eventProxy.Subscribe(MyWebshopContract.EventType.updateListEvent);
+            eventProxy.Subscribe(MyWebshopContract.EventType.outOfStockEvent);
         }
 
         private void btnGetName_Click(object sender, EventArgs e)
@@ -94,13 +102,29 @@ namespace webshopclient
         {
             lblName.Text = "your order of " + productId + " was shipped at " + shippingMoment.ToString() + ".";
         }
-    }
 
-    /*public class CWebshopCallback : MyWebshopContract.IWebshopCallback
-    {
-        public void productShipped(string productId, DateTime shippingMoment)
+        public void updateListEvent()
         {
-            MessageBox.Show("your order of " + productId + " was shipped at " + shippingMoment.ToString() + ".");
+            updateLists();
         }
-    }*/
+
+        public void outOfStockEvent()
+        {
+            for(int i = 0; i < lbId.Items.Count; i++)
+            {
+                if(lbStock.Items[i].ToString() == "0")
+                {
+                    lbId.Items.Add(lbId.Items[i]);
+                    lbPrice.Items.Add(lbPrice.Items[i]);
+                    lbStock.Items.Add(lbStock.Items[i]);
+
+                    lbId.Items.RemoveAt(i);
+                    lbPrice.Items.RemoveAt(i);
+                    lbStock.Items.RemoveAt(i);
+
+                    return;
+                }
+            }
+        }
+    }
 }

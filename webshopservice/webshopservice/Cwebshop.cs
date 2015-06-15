@@ -7,9 +7,14 @@ using System.Text;
 namespace MyWebshopContract
 {
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
-    public class CWebshop : IWebshop
+    public class CWebshop : IWebshop, IEventContract
     {
+        //item database
         private static Database db;
+
+        //events
+        public static Action m_updateLists = delegate { };
+        public static Action m_outOfStock = delegate { };
 
         public string GetWebshopName()
         {
@@ -50,12 +55,59 @@ namespace MyWebshopContract
                         IWebshopCallback callback = OperationContext.Current.GetCallbackChannel<IWebshopCallback>();
                         CBackoffice backend = new CBackoffice();
                         backend.addOrder(ProductId, callback);
+                        FireEvent(EventType.updateListEvent);
+
+                        if(i.Stock == 0)
+                        {
+                            FireEvent(EventType.outOfStockEvent);
+                        }
                         return true;
                     }
                 }
             }
 
             return false;
+        }
+
+        public void Subscribe(EventType mask)
+        {
+            IEvent subscriber = OperationContext.Current.GetCallbackChannel<IEvent>();
+
+            if ((mask & EventType.updateListEvent) == EventType.updateListEvent)
+            {
+                m_updateLists += subscriber.updateListEvent;
+            }
+            else if((mask & EventType.outOfStockEvent) == EventType.outOfStockEvent)
+            {
+                m_outOfStock += subscriber.outOfStockEvent;
+            }
+        }
+
+        public void Unsubscribe(EventType mask)
+        {
+            IEvent subscriber = OperationContext.Current.GetCallbackChannel<IEvent>();
+
+            if ((mask & EventType.updateListEvent) == EventType.updateListEvent)
+            {
+                m_updateLists -= subscriber.updateListEvent;
+            }
+            else if ((mask & EventType.outOfStockEvent) == EventType.outOfStockEvent)
+            {
+                m_outOfStock -= subscriber.outOfStockEvent;
+            }
+        }
+
+        public static void FireEvent(EventType eventType)
+        {
+            switch(eventType)
+            {
+                case EventType.updateListEvent:
+                    m_updateLists();
+                    break;
+                case EventType.outOfStockEvent:
+                    m_outOfStock();
+                    break;
+            }
         }
     }
 }

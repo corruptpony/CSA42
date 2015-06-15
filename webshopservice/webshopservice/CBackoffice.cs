@@ -11,14 +11,16 @@ namespace MyWebshopContract
     class CBackoffice : IBackoffice
     {
         public static List<Order> orders = new List<Order>();
+        private static int orderCount = 0;
 
         public void addOrder(string ProductId, IWebshopCallback callback)
         {
             Order order = new Order();
-            order.ProductId = ProductId;
+            order.ProductId = orderCount + ":" + ProductId;
             order.Moment = DateTime.Now;
             order.WebshopCallback = callback;
             orders.Add(order);
+            orderCount++;
         }
 
         public List<Order> GetOrderList()

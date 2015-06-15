@@ -27,6 +27,7 @@
     <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="d7de74c0-44f4-4c9b-b80e-3e880b54eea0" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/webshopservice/CWebshop/?xsd=xsd0" />
     <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="70a218f1-e155-40fa-9fbb-e4a88c5a86b0" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/webshopservice/CWebshop/?xsd=xsd1" />
     <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="70901a7f-7a37-4b06-81db-755e50625a16" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/webshopservice/CWebshop/?xsd=xsd2" />
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="38f48455-d9e0-4f48-90e7-6282dafa3f62" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/webshopservice/CWebshop/?xsd=xsd3" />
     <MetadataFile FileName="item.wsdl" MetadataType="Wsdl" ID="d36b54d9-9776-45a1-afd6-fe56060f2e27" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/webshopservice/CWebshop/?wsdl=wsdl0" />
     <MetadataFile FileName="item.disco" MetadataType="Disco" ID="f810708f-4244-475f-af27-65940345799d" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/webshopservice/CWebshop/?disco" />
     <MetadataFile FileName="CWebshop.wsdl" MetadataType="Wsdl" ID="cb1bf784-3e01-4ebb-a182-90fa2799789a" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/webshopservice/CWebshop/?wsdl" />

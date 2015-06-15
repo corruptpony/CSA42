@@ -90,6 +90,17 @@ namespace webshopclient.MyWebshopContract {
         }
     }
     
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="EventType", Namespace="http://schemas.datacontract.org/2004/07/MyWebshopContract")]
+    public enum EventType : int {
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        updateListEvent = 1,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        outOfStockEvent = 2,
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="MyWebshopContract", ConfigurationName="MyWebshopContract.IWebshop", CallbackContract=typeof(webshopclient.MyWebshopContract.IWebshopCallback))]
     public interface IWebshop {
@@ -184,6 +195,78 @@ namespace webshopclient.MyWebshopContract {
         
         public System.Threading.Tasks.Task<bool> BuyProductAsync(string ProductId) {
             return base.Channel.BuyProductAsync(ProductId);
+        }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="MyWebshopContract.IEventContract", CallbackContract=typeof(webshopclient.MyWebshopContract.IEventContractCallback))]
+    public interface IEventContract {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEventContract/Subscribe", ReplyAction="http://tempuri.org/IEventContract/SubscribeResponse")]
+        void Subscribe(webshopclient.MyWebshopContract.EventType mask);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEventContract/Subscribe", ReplyAction="http://tempuri.org/IEventContract/SubscribeResponse")]
+        System.Threading.Tasks.Task SubscribeAsync(webshopclient.MyWebshopContract.EventType mask);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEventContract/Unsubscribe", ReplyAction="http://tempuri.org/IEventContract/UnsubscribeResponse")]
+        void Unsubscribe(webshopclient.MyWebshopContract.EventType mask);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEventContract/Unsubscribe", ReplyAction="http://tempuri.org/IEventContract/UnsubscribeResponse")]
+        System.Threading.Tasks.Task UnsubscribeAsync(webshopclient.MyWebshopContract.EventType mask);
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface IEventContractCallback {
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IEventContract/updateListEvent")]
+        void updateListEvent();
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IEventContract/outOfStockEvent")]
+        void outOfStockEvent();
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface IEventContractChannel : webshopclient.MyWebshopContract.IEventContract, System.ServiceModel.IClientChannel {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class EventContractClient : System.ServiceModel.DuplexClientBase<webshopclient.MyWebshopContract.IEventContract>, webshopclient.MyWebshopContract.IEventContract {
+        
+        public EventContractClient(System.ServiceModel.InstanceContext callbackInstance) : 
+                base(callbackInstance) {
+        }
+        
+        public EventContractClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName) : 
+                base(callbackInstance, endpointConfigurationName) {
+        }
+        
+        public EventContractClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress) : 
+                base(callbackInstance, endpointConfigurationName, remoteAddress) {
+        }
+        
+        public EventContractClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(callbackInstance, endpointConfigurationName, remoteAddress) {
+        }
+        
+        public EventContractClient(System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(callbackInstance, binding, remoteAddress) {
+        }
+        
+        public void Subscribe(webshopclient.MyWebshopContract.EventType mask) {
+            base.Channel.Subscribe(mask);
+        }
+        
+        public System.Threading.Tasks.Task SubscribeAsync(webshopclient.MyWebshopContract.EventType mask) {
+            return base.Channel.SubscribeAsync(mask);
+        }
+        
+        public void Unsubscribe(webshopclient.MyWebshopContract.EventType mask) {
+            base.Channel.Unsubscribe(mask);
+        }
+        
+        public System.Threading.Tasks.Task UnsubscribeAsync(webshopclient.MyWebshopContract.EventType mask) {
+            return base.Channel.UnsubscribeAsync(mask);
         }
     }
 }

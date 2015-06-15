@@ -46,4 +46,29 @@ namespace MyWebshopContract
 
         public bool onSale { get; set; }
     }
+
+    public enum EventType
+    {
+        updateListEvent = 1,
+        outOfStockEvent = 2
+    }
+
+    [ServiceContract(CallbackContract=typeof(IEvent))]
+    public interface IEventContract
+    {
+        [OperationContract]
+        void Subscribe(EventType mask);
+
+        [OperationContract]
+        void Unsubscribe(EventType mask);
+    }
+
+    public interface IEvent
+    {
+        [OperationContract(IsOneWay=true)]
+        void updateListEvent();
+
+        [OperationContract(IsOneWay=true)]
+        void outOfStockEvent();
+    }
 }

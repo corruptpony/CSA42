@@ -91,6 +91,9 @@
     <None Include="Service References\MyWebshopContract\item2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\MyWebshopContract\item3.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\MyWebshopContract\webshopclient.MyWebshopContract.Item.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
