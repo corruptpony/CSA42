@@ -1,5 +1,5 @@
+C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\webshopservice\bin\Debug\webshopservice.pdb
 C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\webshopservice\bin\Debug\webshopservice.dll.config
 C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\webshopservice\bin\Debug\webshopservice.dll
-C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\webshopservice\bin\Debug\webshopservice.pdb
 C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\webshopservice\obj\Debug\webshopservice.dll
 C:\Users\Tim\Documents\GitHub\CSA42\webshopservice\webshopservice\obj\Debug\webshopservice.pdb
